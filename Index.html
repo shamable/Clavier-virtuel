@@ -3,10 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Clavier virtuel</title>
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="bouton.scss">
+
 </head>
+<div id="container">
 <body>
+<header>
+    <h1 class="animate__animated animate__backInLeft">Clavier virtuel</h1>
+</header>
 <main>
-    <label>Zone de texte </label> : <input type="text" name="zonetexte"/>
+    <p>
+        <label for="zonetexte">Zone de texte :</label><br />
+        <textarea name="zonetexte" id="zonetexte"  rows="10" cols="50"></textarea>
+    </p>
+
+    <div class="touches-claviers">
+        <button class="buton btn1">1</button>
+        <button class="buton btn2">2</button>
+        <button class="buton btn3">3</button>
+        <button class="buton btn4">4</button>
+        <button class="buton btn5">5</button>
+        <button class="buton btn6">6</button>
+        <button class="buton btn7">7</button>
+        <button class="buton btn8">8</button>
+        <button class="buton btn9">9</button>
+        <button class="buton btn10">0</button>
+        <button class="btn-del">DEL</button>
+        <button class="buton btn11">A</button>
+        <button class="buton btn12">Z</button>
+        <button class="buton btn13">E</button>
+        <button class="buton btn14">R</button>
+        <button class="buton btn15">T</button>
+        <button class="buton btn16">Y</button>
+        <button class="buton btn17">U</button>
+        <button class="buton btn18">I</button>
+        <button class="buton btn19">O</button>
+        <button class="buton btn20">P</button>
+        <button class="btn-enter">ENTER</button>
+        <button class="btn-caps active-caps">CAPS </button>
+        <button class="buton btn21">Q</button>
+        <button class="buton btn22">S</button>
+        <button class="buton btn23">D</button>
+        <button class="buton btn24">F</button>
+        <button class="buton btn25">G</button>
+        <button class="buton btn26">H</button>
+        <button class="buton btn27">J</button>
+        <button class="buton btn28">K</button>
+        <button class="buton btn29">L</button>
+        <button class="buton btn30">M</button>
+        <!-- <button class="btn-shift">SHIFT</button> -->
+        <button class="buton btn31">W</button>
+        <button class="buton btn32">X</button>
+        <button class="buton btn33">C</button>
+        <button class="buton btn34">V</button>
+        <button class="buton btn35">B</button>
+        <button class="buton btn36">N</button>
+        <button class="buton btn37">? ,</button>
+        <button class="buton btn38">;</button>
+        <button class="buton btn39">/</button>
+        <button class="buton btn40">!</button>
+        <h4>mode nuit</h4>
+        <div>
+            <label>
+                <input type="checkbox" checked/>
+                <div>
+                    <span class="on">On</span>
+                    <span class="off">Off</span>
+                </div>
+                <i></i>
+            </label>
+        </div>
+        <button class="buton-space">SPACE</button>
+    </div>
+
 </main>
 </body>
+</div>
 </html>
+
+
+
+
