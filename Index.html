@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Clavier virtuel</title>
     <link rel="stylesheet" href="keyboard.css">
-    <link rel="stylesheet" href="bouton.scss">
-
 </head>
 <div id="container">
 <body>
@@ -17,71 +15,86 @@
         <label for="zonetexte">Zone de texte :</label><br />
         <textarea name="zonetexte" id="zonetexte"  rows="10" cols="50"></textarea>
     </p>
-
-    <div class="touches-claviers">
-        <button class="buton btn1">1</button>
-        <button class="buton btn2">2</button>
-        <button class="buton btn3">3</button>
-        <button class="buton btn4">4</button>
-        <button class="buton btn5">5</button>
-        <button class="buton btn6">6</button>
-        <button class="buton btn7">7</button>
-        <button class="buton btn8">8</button>
-        <button class="buton btn9">9</button>
-        <button class="buton btn10">0</button>
-        <button class="btn-del">DEL</button>
-        <button class="buton btn11">A</button>
-        <button class="buton btn12">Z</button>
-        <button class="buton btn13">E</button>
-        <button class="buton btn14">R</button>
-        <button class="buton btn15">T</button>
-        <button class="buton btn16">Y</button>
-        <button class="buton btn17">U</button>
-        <button class="buton btn18">I</button>
-        <button class="buton btn19">O</button>
-        <button class="buton btn20">P</button>
-        <button class="btn-enter">ENTER</button>
-        <button class="btn-caps active-caps">CAPS </button>
-        <button class="buton btn21">Q</button>
-        <button class="buton btn22">S</button>
-        <button class="buton btn23">D</button>
-        <button class="buton btn24">F</button>
-        <button class="buton btn25">G</button>
-        <button class="buton btn26">H</button>
-        <button class="buton btn27">J</button>
-        <button class="buton btn28">K</button>
-        <button class="buton btn29">L</button>
-        <button class="buton btn30">M</button>
-        <!-- <button class="btn-shift">SHIFT</button> -->
-        <button class="buton btn31">W</button>
-        <button class="buton btn32">X</button>
-        <button class="buton btn33">C</button>
-        <button class="buton btn34">V</button>
-        <button class="buton btn35">B</button>
-        <button class="buton btn36">N</button>
-        <button class="buton btn37">? ,</button>
-        <button class="buton btn38">;</button>
-        <button class="buton btn39">/</button>
-        <button class="buton btn40">!</button>
+        <div id="keyboard">
+            <div class="ligne1">
+                <input type="button" value="²">
+                <input class="special" type="button" value="&">
+                <input class="special" type="button" value="é">
+                <input class="special" type="button" value='"'>
+                <input class="special" type="button" value="'">
+                <input class="special" type="button" value="(">
+                <input class="special" type="button" value="-">
+                <input class="special" type="button" value="è">
+                <input class="special" type="button" value="_">
+                <input class="special" type="button" value="ç">
+                <input class="special" type="button" value="à">
+                <input class="special" type="button" value=")">
+                <input class="special" type="button" value="=">
+                <input type="button" value="Delete">
+            </div>
+            <div class="ligne2">
+                <input type="button" value="Tab">
+                <input class="letter" type="button" value="a">
+                <input class="letter" type="button" value="z">
+                <input class="letter" type="button" value="e">
+                <input class="letter" type="button" value="r">
+                <input class="letter" type="button" value="t">
+                <input class="letter" type="button" value="y">
+                <input class="letter" type="button" value="u">
+                <input class="letter" type="button" value="i">
+                <input class="letter" type="button" value="o">
+                <input class="letter" type="button" value="p">
+                <input class="special" type="button" value="^">
+                <input class="special" type="button" value="$">
+            </div>
+            <div class="ligne3">
+                <button id="caps-lock">Caps Lock<div class="circle"></div>
+                </button>
+                <input class="letter" type="button" value="q">
+                <input class="letter" type="button" value="s">
+                <input class="letter" type="button" value="d">
+                <input class="letter" type="button" value="f">
+                <input class="letter" type="button" value="g">
+                <input class="letter" type="button" value="h">
+                <input class="letter" type="button" value="j">
+                <input class="letter" type="button" value="k">
+                <input class="letter" type="button" value="l">
+                <input class="letter" type="button" value="m">
+                <input class="special" type="button" value="ù">
+                <input class="special" type="button" value="*">
+                <input type="button" value="Enter">
+            </div>
+            <div class="ligne4">
+                <input type="button" value="Shift">
+                <input class="special" type="button" value="<">
+                <input class="letter" type="button" value="w">
+                <input class="letter" type="button" value="x">
+                <input class="letter" type="button" value="c">s
+                <input class="letter" type="button" value="v">
+                <input class="letter" type="button" value="b">
+                <input class="letter" type="button" value="n">
+                <input class="special" type="button" value=",">
+                <input class="special" type="button" value=";">
+                <input class="special" type="button" value=":">
+                <input class="special" type="button" value="!">
+                <input type="button" value="MAJ">
+            </div>
+           <div>
+            <input class="space" type="button" value="SPACE">
         <h4>mode nuit</h4>
-        <div>
-            <label>
-                <input type="checkbox" checked/>
-                <div>
-                    <span class="on">On</span>
-                    <span class="off">Off</span>
-                </div>
-                <i></i>
+            <label class="switch">
+                <input id="darkSwitch" type="checkbox" value="false">
+                <span class="slider round"></span>
             </label>
         </div>
-        <button class="buton-space">SPACE</button>
-    </div>
+        </div>
+    <input type=button onclick=window.location.href='http://monsite.fr'; value=Porte-folio />
+
 
 </main>
 </body>
 </div>
 </html>
-
 
 
 
